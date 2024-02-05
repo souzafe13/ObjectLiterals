@@ -52,3 +52,66 @@ const objetoDestino = {};
 Object.assign(objetoDestino, objeto1, objeto2)
 
 console.log(objetoDestino);
+
+// Método keys
+
+const objeto = {
+    nome: "Joaquim",
+    idade: 21
+};
+
+const chaves = Object.keys(objeto);
+
+console.log(chaves);
+
+// Mutação - Atribuição
+
+const  hospede = {
+    nome: "Alberto"
+};
+
+hospede.nome = "Junior";
+console.log(hospede);
+
+// Mutação - Inserção
+
+hospede.sobrenome = "Lima"
+
+console.log(hospede);
+
+// Mutação - Operador de adição
+
+const hospedeNovo = {
+    nome: "Mariana",
+    idade: 56
+};
+
+hospedeNovo.idade += 2;
+
+console.log(hospedeNovo.idade);
+
+// Multação - deletar
+
+delete hospedeNovo.nome;
+console.log(hospedeNovo);
+
+// Método string: trim
+
+const textoEspacado = "          Esta é uma string com espaços em branco   "
+
+const textoSemEspacos = textoEspacado.trim();
+
+console.log(textoSemEspacos);
+
+// PadStart
+
+const numero = "1234";
+// *** Preencher com zeros para atingir 8 caracteres ***
+const numeroFormatado = numero.padStart(8, "0");
+console.log(numeroFormatado);
+
+const codigo = "ABC";
+// Preencher com traços para atingir 5 caracteres
+const codigoPreenchido = codigo.padStart(5, "-");
+console.log(codigoPreenchido);
+
